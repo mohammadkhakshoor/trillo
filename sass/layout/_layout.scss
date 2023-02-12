@@ -3,12 +3,19 @@
     margin: 8rem auto;
     min-height: 50rem;
     background-color: #fff;
-    box-shadow: 0 2rem 6rem rgba(0,0,0,0.1);
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.1);
 }
 .header {
     min-height: 7rem;
     background-color: $clr-Grey-light-600;
     border-bottom: 1px solid $clr-Grey-light-600;
+
+    font-size: 1.8rem;
+
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    justify-content: space-between;
 }
 .content {
     display: flex;
@@ -16,7 +23,6 @@
 .nav {
     background-color: $clr-Grey-dark-400;
     flex: 0 0 18%;
-    
 }
 .main {
     flex: 1;

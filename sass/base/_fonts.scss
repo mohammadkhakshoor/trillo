@@ -23,3 +23,17 @@
     font-style: normal;
     font-weight: 400;
 }
+@font-face {
+    font-family: "googleSans-regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/assets/fonts/google-sans/ProductSans-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "googleSans-thin";
+    src: url(/assets/fonts/google-sans/ProductSans-Thin.ttf) format("truetype");
+}
+@font-face {
+    font-family: "googleSans-bold";
+    src: url(/assets/fonts/google-sans/ProductSans-Bold.ttf) format("truetype");
+}
