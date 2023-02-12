@@ -1,0 +1,134 @@
+///////////////////////////////////
+/// LOGO
+.logo__box {
+}
+.logo {
+    width: 5rem;
+}
+///////////////////////////////////
+/// SEARCH
+.search {
+    flex: 0 0 35%;
+
+    display: flex;
+    align-items: center;
+
+    &__input {
+        font-size: inherit;
+        color: #000;
+        width: 93%;
+        transition: all 0.2s;
+        border: none;
+        border-radius: 10rem;
+
+        padding: 1rem 2rem;
+        margin-left: -4rem;
+
+        background-color: $clr-Grey-light-400;
+
+
+        // first i declared these poroerties here but when i was hovering the search icon , the input field started to flickring so i decalred these properies to the form itself which you can see a bit lowwer
+
+        // &:hover,
+        // &:focus {
+        //     width: 100%;
+        //     border: none;
+        //     outline: none;
+        //     background-color: $clr-Grey-light-300;
+        // }
+        &::-webkit-input-placeholder {
+            font-size: inherit;
+        }
+        &::-webkit-search-decoration,
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-results-button,
+        &::-webkit-search-results-decoration {
+            display: none;
+        }
+        &:hover::-webkit-input-placeholder {
+            color: #fff;
+        }
+    }
+    &:hover &__input,
+    &:focus &__input {
+        width: 100%;
+        border: 0;
+        outline: 0;
+        background-color: $clr-Grey-light-300;
+    }
+
+    &__button {
+        position: relative;
+        z-index: 1;
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+    &__icon {
+        width: 2.95rem;
+        height: 2.95rem;
+        background-color: transparent;
+        fill: $clr-Grey-dark-500;
+    }
+    &__input:hover + &__button {
+    }
+}
+///////////////////////////////////
+/// USER-NAV
+.user-nav {
+    font-family: "googlesans-bold";
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    
+    & > * {
+        cursor: pointer;
+    }
+    &__icon-box {
+        position: relative;
+    }
+    &__icon {
+        width: 3rem;
+        height: 3rem;
+        fill: $clr-Grey-dark-500;
+    }
+    &__notification {
+        font-family: "peyda";
+        position: absolute;
+        color: $clr-Grey-dark-400;
+
+        // display: grid;
+        // place-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        top: -1rem;
+        left: 1.7rem;
+        background-color: $clr-Primary;
+        padding: 1.1rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+    }
+    &__user {
+        overflow: hidden;
+        width: 4.8rem;
+
+        border-radius: 50%;
+    }
+    &__user-photo {
+        width: 4.8rem;
+        height: 4.8rem;
+        border-radius: 50%;
+        transform: scale(1.2);
+        position: relative;
+        
+    }
+    &__user-name {
+        font-family: "peyda";
+        font-weight: bold;
+        margin-right: -2.6rem;
+    }
+}

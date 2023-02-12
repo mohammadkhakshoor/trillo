@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%; /* 1rem = 10px*/
+}
+body {
+    font-family: "peyda", "iransans-light";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to left bottom, $clr-Primary-light, $clr-Primary-dark);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+form,
+input {
+    font-family: inherit;
+}
