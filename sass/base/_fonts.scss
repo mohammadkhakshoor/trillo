@@ -1,22 +1,25 @@
 @font-face {
-    font-family: "iransans";
+    font-family: "iransans-light";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/IRANSansLight.woff) format("woff");
+    src: url(/assets/fonts/iransans/IRANSansLight.woff) format("woff");
 }
 @font-face {
-    font-family: "iransans";
+    font-family: "iransans-bold";
     font-style: bold;
     font-weight: 500;
-    src: url(/fonts/IRANSansBold.woff) format("woff");
+    src: url(/assets/fonts/iransans/IRANSansBold.woff) format("woff");
 }
 @font-face {
-    font-family: "iransans";
+    font-family: "iransans-bolder";
     font-style: bolder;
     font-weight: 700;
-    src: url(/fonts/IRANSansBold.woff) format("woff");
+    src: url(/assets/fonts/iransans/IRANSansBold.woff) format("woff");
 }
 @font-face {
     font-family: "peyda";
-    src: url(/fonts/peydar/PeydaWeb-Regular.woff) format("woff");
+    src: url(/assets/fonts/peydar/Peyda-Regular.ttf) format("truetype");
+    src: url(/assets/fonts/peydar/PeydaWeb-Regular.woff) format("woff");
+    font-style: normal;
+    font-weight: 400;
 }
