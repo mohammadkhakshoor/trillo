@@ -1,3 +1,11 @@
+@keyframes infinitPpoup {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
 *,
 *::before,
 *::after {
@@ -22,7 +30,8 @@ body {
 }
 
 form,
-input {
+input,
+button {
   font-family: inherit;
 }
 
@@ -178,7 +187,7 @@ input {
 }
 .sidebar__item {
   margin-bottom: 0.5rem;
-  padding: 2.5rem 0 2.5rem 3rem;
+  padding: 2.4rem 0 2.5rem 3rem;
   position: relative;
   display: flex;
   align-items: center;
@@ -207,7 +216,7 @@ input {
 }
 .sidebar__link:link, .sidebar__link:visited {
   text-decoration: none;
-  font-size: 1.9rem;
+  font-size: 2.2rem;
   color: #faf9f9;
   display: flex;
   align-items: center;
@@ -224,9 +233,67 @@ input {
   padding: 2.5rem 2rem;
 }
 
+.gallery {
+  display: flex;
+}
+.gallery__img {
+  width: 100%;
+  display: block;
+}
+
+.overview {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+.overview__name {
+  font-size: 2.4rem;
+  margin: 0 1rem;
+}
+.overview__star {
+  margin-left: auto;
+}
+.overview__star-icon {
+  width: 2.55rem;
+  height: 2.55rem;
+  fill: #eb2f64;
+}
+.overview__btn {
+  display: flex;
+  align-items: center;
+}
+.overview__btn-inline {
+  animation: infinitpopup;
+  border: 0;
+  padding: 0.3rem 0.5rem;
+  background-color: transparent;
+  font-size: 1.7rem;
+  border-bottom: 1px solid #000;
+  margin-right: 0.3rem;
+}
+.overview__btn-inline:focus {
+  animation: infinitPpoup 1s infinite;
+  color: #eb2f64;
+}
+.overview__location-icon {
+  width: 2.55rem;
+  height: 2.55rem;
+  fill: #eb2f64;
+}
+.overview__rating {
+  font-family: "googlesans-bold";
+  text-align: center;
+  color: #f0eeee;
+  background-color: #eb2f64;
+  padding: 1.8rem;
+  margin-right: 1.8rem;
+}
+.overview__rating-average {
+  font-size: 2.2rem;
+}
 .container {
   max-width: 130rem;
-  margin: 8rem auto;
+  margin: 2rem auto;
   background-color: #fff;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.1);
 }
@@ -235,6 +302,7 @@ input {
   min-height: 7rem;
   background-color: #faf9f9;
   border-bottom: 1px solid #faf9f9;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   font-size: 1.8rem;
   display: flex;
   align-items: center;
@@ -253,7 +321,7 @@ input {
 
 .main {
   flex: 1;
-  background-color: #eb2f64;
+  height: 90rem;
 }
 
 /*# sourceMappingURL=style.css.map */

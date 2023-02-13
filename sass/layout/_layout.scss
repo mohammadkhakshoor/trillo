@@ -1,6 +1,6 @@
 .container {
     max-width: 130rem;
-    margin: 8rem auto;
+    margin: 2rem auto;
     // min-height: 50rem;
     background-color: #fff;
     box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.1);
@@ -9,6 +9,7 @@
     min-height: 7rem;
     background-color: $clr-Grey-light-600;
     border-bottom: 1px solid $clr-Grey-light-600;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 
     font-size: 1.8rem;
 
@@ -26,5 +27,6 @@
 }
 .main {
     flex: 1;
-    background-color: $clr-Primary;
+    height: 90rem;
+    
 }
