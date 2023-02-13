@@ -27,7 +27,11 @@
         font-size: 1.7rem;
         border-bottom: 1px solid #000;
         margin-right: 0.3rem;
+        transition: color 0.2s;
         
+    }
+    &__btn-inline:hover {
+        color: $clr-Primary ;
     }
     &__btn-inline:focus {
         animation: infinitPpoup 1s infinite;

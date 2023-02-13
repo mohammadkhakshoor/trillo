@@ -1,9 +1,13 @@
 @keyframes infinitPpoup {
   0% {
-    transform: scale(1);
+    transform: scale(1) skewX(0deg);
   }
-  100% {
-    transform: scale(1.1);
+  50% {
+    transform: scale(1.1) skewY(-3deg);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  }
+  0% {
+    transform: scale(1) skewX(0deg);
   }
 }
 *,
@@ -146,7 +150,7 @@ button {
 .user-nav__notification {
   font-family: "peyda";
   position: absolute;
-  color: #333;
+  color: #f0eeee;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -270,6 +274,10 @@ button {
   font-size: 1.7rem;
   border-bottom: 1px solid #000;
   margin-right: 0.3rem;
+  transition: color 0.2s;
+}
+.overview__btn-inline:hover {
+  color: #eb2f64;
 }
 .overview__btn-inline:focus {
   animation: infinitPpoup 1s infinite;
