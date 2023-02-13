@@ -14,7 +14,7 @@ body {
   font-family: "peyda", "iransans-light";
   font-style: normal;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   background-image: linear-gradient(to left bottom, #ff3366, #ba265d);
   background-size: cover;
   background-repeat: no-repeat;
@@ -131,6 +131,9 @@ input {
   height: 3rem;
   fill: #777;
 }
+.user-nav__icon:hover {
+  fill: #999;
+}
 .user-nav__notification {
   font-family: "peyda";
   position: absolute;
@@ -167,7 +170,6 @@ input {
 .container {
   max-width: 130rem;
   margin: 8rem auto;
-  min-height: 50rem;
   background-color: #fff;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.1);
 }
@@ -187,7 +189,7 @@ input {
   display: flex;
 }
 
-.nav {
+.sidebar {
   background-color: #333;
   flex: 0 0 18%;
 }

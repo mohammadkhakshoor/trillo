@@ -26,7 +26,6 @@
 
         background-color: $clr-Grey-light-400;
 
-
         // first i declared these poroerties here but when i was hovering the search icon , the input field started to flickring so i decalred these properies to the form itself which you can see a bit lowwer
 
         // &:hover,
@@ -81,7 +80,7 @@
     display: flex;
     align-items: center;
     gap: 3.5rem;
-    
+
     & > * {
         cursor: pointer;
     }
@@ -92,6 +91,9 @@
         width: 3rem;
         height: 3rem;
         fill: $clr-Grey-dark-500;
+        &:hover {
+            fill: $clr-Grey-dark-600;
+        }
     }
     &__notification {
         font-family: "peyda";
@@ -124,7 +126,6 @@
         border-radius: 50%;
         transform: scale(1.2);
         position: relative;
-        
     }
     &__user-name {
         font-family: "peyda";

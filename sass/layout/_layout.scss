@@ -1,7 +1,7 @@
 .container {
     max-width: 130rem;
     margin: 8rem auto;
-    min-height: 50rem;
+    // min-height: 50rem;
     background-color: #fff;
     box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.1);
 }
@@ -20,7 +20,7 @@
 .content {
     display: flex;
 }
-.nav {
+.sidebar {
     background-color: $clr-Grey-dark-400;
     flex: 0 0 18%;
 }
