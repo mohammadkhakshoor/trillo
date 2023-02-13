@@ -1,9 +1,12 @@
 @import "abstracts/variables";
+@import "abstracts/animation";
 
 @import "base/base";
 @import "base/fonts";
 
-@import "components/header-components";
-@import "components/sidebar-components";
+@import "components/header";
+@import "components/sidebar";
+@import "components/gallery";
+@import "components/overview";
 
 @import "layout/layout"

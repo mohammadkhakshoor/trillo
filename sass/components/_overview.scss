@@ -1,0 +1,54 @@
+.overview {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+
+    &__name {
+        font-size: 2.4rem;
+        margin: 0 1rem;
+    }
+    &__star {
+        margin-left: auto;
+    }
+    &__star-icon {
+        width: 2.55rem;
+        height: 2.55rem;
+        fill: $clr-Primary;
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+    }
+    &__btn-inline {
+        animation: infinitpopup;
+        border: 0;
+        padding: 0.3rem 0.5rem;
+        background-color: transparent;
+        font-size: 1.7rem;
+        border-bottom: 1px solid #000;
+        margin-right: 0.3rem;
+        
+    }
+    &__btn-inline:focus {
+        animation: infinitPpoup 1s infinite;
+        color: $clr-Primary ;
+    }
+    &__location-icon {
+        width: 2.55rem;
+        height: 2.55rem;
+        fill: $clr-Primary;
+    }
+    &__rating {
+        font-family: "googlesans-bold";
+        text-align: center;
+        color: $clr-Grey-light-400;
+        background-color: $clr-Primary;
+        padding: 1.8rem;
+        margin-right: 1.8rem;
+        &-average {
+            font-size: 2.2rem;
+        }
+        &-vote {
+        }
+    }
+}
