@@ -167,6 +167,39 @@ input {
   margin-right: -2.6rem;
 }
 
+.sidebar {
+  color: #faf9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sidebar__nav {
+  list-style: none;
+  padding-top: 0.5rem;
+}
+.sidebar__item {
+  margin-bottom: 0.5rem;
+  padding: 2.5rem 3rem;
+}
+.sidebar__link:link, .sidebar__link:visited {
+  text-decoration: none;
+  font-size: 1.9rem;
+  color: #faf9f9;
+  display: flex;
+  align-items: center;
+}
+.sidebar__icon {
+  width: 2.95rem;
+  height: 2.95rem;
+  margin-left: 2rem;
+  fill: #faf9f9;
+}
+
+.copyright {
+  font-size: 1.3rem;
+  padding: 2.5rem 2rem;
+}
+
 .container {
   max-width: 130rem;
   margin: 8rem auto;

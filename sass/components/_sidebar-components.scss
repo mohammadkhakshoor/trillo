@@ -1,0 +1,36 @@
+.sidebar {
+    color: $clr-Grey-light-600;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__nav {
+        list-style: none;
+        padding-top: 0.5rem;
+    }
+    &__item {
+        margin-bottom: 0.5rem;
+
+        padding: 2.5rem 3rem;
+    }
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        font-size: 1.9rem;
+        color: $clr-Grey-light-600;
+
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        width: 2.95rem;
+        height: 2.95rem;
+        margin-left: 2rem;
+        fill: $clr-Grey-light-600;
+    }
+}
+.copyright {
+    font-size: 1.3rem;
+    padding: 2.5rem 2rem;
+    //     padding: 1rem 2rem;
+}
