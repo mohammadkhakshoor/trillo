@@ -175,11 +175,35 @@ input {
 }
 .sidebar__nav {
   list-style: none;
-  padding-top: 0.5rem;
 }
 .sidebar__item {
   margin-bottom: 0.5rem;
-  padding: 2.5rem 3rem;
+  padding: 2.5rem 0 2.5rem 3rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.sidebar__item::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 0; /*it will become 100% at the hover state 5 line down*/
+  width: 0.4rem;
+  background-color: #eb2f64;
+  transition: height 0.3s, width 0.3s 0.3s;
+}
+.sidebar__item:hover::before {
+  height: 100%;
+  width: 100%;
+}
+.sidebar__link {
+  position: relative;
+  z-index: 1;
+  padding-right: 1rem;
+}
+.sidebar__link span {
+  display: block;
+  margin-top: 0.4rem;
 }
 .sidebar__link:link, .sidebar__link:visited {
   text-decoration: none;
