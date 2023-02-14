@@ -26,7 +26,7 @@ body {
   font-family: "peyda", "iransans-light";
   font-style: normal;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   background-image: linear-gradient(to left bottom, #ff3366, #ba265d);
   background-size: cover;
   background-repeat: no-repeat;
@@ -256,6 +256,8 @@ button {
 }
 .overview__star {
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 .overview__star-icon {
   width: 2.55rem;
@@ -299,6 +301,54 @@ button {
 .overview__rating-average {
   font-size: 2.2rem;
 }
+.description__text:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+.description__list {
+  list-style: none;
+  margin: 2.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.description__item {
+  flex: 0 0 50%;
+  margin-bottom: 0.5rem;
+}
+.description__item::before {
+  content: "";
+  height: 1.3rem;
+  width: 1.3rem;
+  background-color: red;
+  display: inline-block;
+  margin-left: 1rem;
+  -webkit-mask-image: url(../../assets/img/chevrons-left.svg);
+  -webkit-mask-size: cover;
+  mask-image: url(../../assets/img/chevrons-left.svg);
+  mask-size: cover;
+  transform: translateY(0.2rem);
+}
+
+.user-oppinions {
+  display: flex;
+  align-items: center;
+}
+.user-oppinions__img-box {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.user-oppinions__photo {
+  display: inline-block;
+  box-sizing: content-box;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.user-oppinions__photo:not(:first-child) {
+  margin-right: -1.6rem;
+}
+
 .container {
   max-width: 130rem;
   margin: 2rem auto;
@@ -339,6 +389,8 @@ button {
 .description {
   flex: 0 0 60%;
   margin-left: 4.5rem;
+  padding: 3rem 2rem;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.09);
 }
 
 .reviews {

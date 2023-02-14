@@ -1,0 +1,25 @@
+.user-oppinions {
+    display: flex;
+    align-items: center;
+    &__text {
+    }
+    &__img-box {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+       
+
+       
+    }
+    &__photo {
+        display: inline-block;
+        box-sizing: content-box;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        &:not(:first-child) {
+            margin-right: -1.6rem;
+        }
+    }
+}

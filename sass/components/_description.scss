@@ -1,0 +1,39 @@
+.description {
+    &__text {
+        &:not(:last-of-type) {
+            margin-bottom: 2rem;
+        }
+    }
+    &__list {
+        list-style: none;
+        margin: 2.5rem 0;
+
+        display: flex;
+        flex-wrap: wrap;
+     
+
+    }
+    &__item {
+        flex: 0 0 50%;
+        margin-bottom: 0.5rem;
+        // margin-left: .4rem;
+    }
+    &__item::before {
+        content: "";
+        height: 1.3rem;
+        width: 1.3rem;
+        background-color: red;
+        display: inline-block;
+        margin-left: 1rem;
+
+        //newer browser
+        -webkit-mask-image:url(../../assets/img/chevrons-left.svg);
+        -webkit-mask-size: cover;
+        mask-image:url(../../assets/img/chevrons-left.svg);
+        mask-size: cover;
+
+        //older bowser
+
+        transform: translateY(.2rem);
+    }
+}

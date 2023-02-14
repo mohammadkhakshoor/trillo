@@ -9,6 +9,8 @@
     }
     &__star {
         margin-left: auto;
+        display: flex;
+        align-items: center;
     }
     &__star-icon {
         width: 2.55rem;
