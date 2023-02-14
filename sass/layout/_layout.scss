@@ -27,6 +27,16 @@
 }
 .main {
     flex: 1;
-    height: 90rem;
+}
+.details {
+    display: flex;
+    padding: 4.5rem;
+}
+.description {
+    flex: 0 0 60%;
+    margin-left: 4.5rem;
+}
+.reviews {
+    flex: 1;
     
 }

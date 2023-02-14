@@ -272,7 +272,7 @@ button {
   padding: 0.3rem 0.5rem;
   background-color: transparent;
   font-size: 1.7rem;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid currentColor;
   margin-right: 0.3rem;
   transition: color 0.2s;
 }
@@ -329,7 +329,20 @@ button {
 
 .main {
   flex: 1;
-  height: 90rem;
+}
+
+.details {
+  display: flex;
+  padding: 4.5rem;
+}
+
+.description {
+  flex: 0 0 60%;
+  margin-left: 4.5rem;
+}
+
+.reviews {
+  flex: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
