@@ -1,0 +1,76 @@
+///////////////////////////
+/// REVIEW
+.reviews {
+    &__content {
+        padding:1.5rem 3.5rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 0.5rem 1.6rem rgba(0, 0, 0, 0.09);
+    }
+    &__text {
+    }
+    &__user {
+        display: flex;
+        align-items: center;
+        margin: 1.8rem 0;
+    }
+    &__user-photo {
+        width: 5.5rem;
+        height: 5.5rem;
+        border-radius: 50%;
+        // border:3px solid #fff
+    }
+    &__user-info {
+        margin-right: 1.4rem;
+    }
+    &__user-name {
+    }
+    &__user-date {
+        font-size: 1.4rem;
+    }
+    &__user-rate {
+        margin-right: auto;
+        font-size: 3rem;
+        color: $clr-Primary;
+    }
+    ///////////////////////////
+    /// REVIEW LINK
+    &__link-box {
+        margin-top: 4rem;
+        text-align: center;
+        
+    }
+    &__link {
+        text-decoration: none;
+        color: $clr-Primary;
+
+        display: flex;
+        align-items: center;
+
+        transition: color 0.2s;
+        
+        &:hover {
+            color: #000;
+        }
+        
+
+
+        
+
+        span {
+            display: inline-block;
+            background-color: currentColor;
+            width: 1.6rem;
+            height: 1.6rem;
+            -webkit-mask-image: url(/assets/img/chevrons-left.svg);
+            -webkit-mask-size: cover;
+            margin-right: 0.7rem;
+            transition: transform 0.2s;
+
+            // transform: translateY(.4rem);
+        }
+        &:hover span {
+            transform: translateX(-1rem);
+        }
+    }
+}
+

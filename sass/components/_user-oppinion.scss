@@ -1,0 +1,29 @@
+.user-oppinions {
+    margin-top: auto;
+
+    display: flex;
+    align-items: center;
+    &__text {
+    }
+    &__img-box {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+    }
+    &__photo {
+        display: inline-block;
+        box-sizing: content-box;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        &:not(:last-child) {
+            margin-left: -1.5rem;
+            transition: margin-left, transform 0.2s;
+        }
+        &:hover:not(:last-child) {
+            // margin-left: 0;
+            transform: translateX(1.5rem);
+        }
+    }
+}

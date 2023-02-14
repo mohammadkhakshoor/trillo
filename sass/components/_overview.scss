@@ -9,6 +9,8 @@
     }
     &__star {
         margin-left: auto;
+        display: flex;
+        align-items: center;
     }
     &__star-icon {
         width: 2.55rem;
@@ -25,17 +27,16 @@
         padding: 0.3rem 0.5rem;
         background-color: transparent;
         font-size: 1.7rem;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid currentColor;
         margin-right: 0.3rem;
         transition: color 0.2s;
-        
     }
     &__btn-inline:hover {
-        color: $clr-Primary ;
+        color: $clr-Primary;
     }
     &__btn-inline:focus {
         animation: infinitPpoup 1s infinite;
-        color: $clr-Primary ;
+        color: $clr-Primary;
     }
     &__location-icon {
         width: 2.55rem;
@@ -53,6 +54,9 @@
             font-size: 2.2rem;
         }
         &-vote {
+            span {
+                font-family: "peyda";
+            }
         }
     }
 }
