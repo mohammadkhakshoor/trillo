@@ -1,4 +1,6 @@
 .user-oppinions {
+    margin-top: auto;
+
     display: flex;
     align-items: center;
     &__text {
@@ -7,9 +9,6 @@
         display: flex;
         align-items: center;
         margin-right: auto;
-       
-
-       
     }
     &__photo {
         display: inline-block;
@@ -18,8 +17,13 @@
         height: 4.5rem;
         border-radius: 50%;
         border: 3px solid #fff;
-        &:not(:first-child) {
-            margin-right: -1.6rem;
+        &:not(:last-child) {
+            margin-left: -1.5rem;
+            transition: margin-left, transform 0.2s;
+        }
+        &:hover:not(:last-child) {
+            // margin-left: 0;
+            transform: translateX(1.5rem);
         }
     }
 }

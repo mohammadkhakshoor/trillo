@@ -301,6 +301,64 @@ button {
 .overview__rating-average {
   font-size: 2.2rem;
 }
+.overview__rating-vote span {
+  font-family: "peyda";
+}
+
+.reviews__content {
+  padding: 1.5rem 3.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0.5rem 1.6rem rgba(0, 0, 0, 0.09);
+}
+.reviews__user {
+  display: flex;
+  align-items: center;
+  margin: 1.8rem 0;
+}
+.reviews__user-photo {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+}
+.reviews__user-info {
+  margin-right: 1.4rem;
+}
+.reviews__user-date {
+  font-size: 1.4rem;
+}
+.reviews__user-rate {
+  margin-right: auto;
+  font-size: 3rem;
+  color: #eb2f64;
+}
+.reviews__link-box {
+  margin-top: 4rem;
+  text-align: center;
+}
+.reviews__link {
+  text-decoration: none;
+  color: #eb2f64;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+.reviews__link:hover {
+  color: #000;
+}
+.reviews__link span {
+  display: inline-block;
+  background-color: currentColor;
+  width: 1.6rem;
+  height: 1.6rem;
+  -webkit-mask-image: url(/assets/img/chevrons-left.svg);
+  -webkit-mask-size: cover;
+  margin-right: 0.7rem;
+  transition: transform 0.2s;
+}
+.reviews__link:hover span {
+  transform: translateX(-1rem);
+}
+
 .description__text:not(:last-of-type) {
   margin-bottom: 2rem;
 }
@@ -329,6 +387,7 @@ button {
 }
 
 .user-oppinions {
+  margin-top: auto;
   display: flex;
   align-items: center;
 }
@@ -345,12 +404,16 @@ button {
   border-radius: 50%;
   border: 3px solid #fff;
 }
-.user-oppinions__photo:not(:first-child) {
-  margin-right: -1.6rem;
+.user-oppinions__photo:not(:last-child) {
+  margin-left: -1.5rem;
+  transition: margin-left, transform 0.2s;
+}
+.user-oppinions__photo:hover:not(:last-child) {
+  transform: translateX(1.5rem);
 }
 
 .container {
-  max-width: 130rem;
+  max-width: 132rem;
   margin: 2rem auto;
   background-color: #fff;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.1);
@@ -391,10 +454,15 @@ button {
   margin-left: 4.5rem;
   padding: 3rem 2rem;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.09);
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
