@@ -23,7 +23,8 @@
     }
     &__btn-inline {
         animation: infinitpopup;
-        border: 0;
+        outline: none;
+        border: none;
         padding: 0.3rem 0.5rem;
         background-color: transparent;
         font-size: 1.7rem;

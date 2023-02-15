@@ -16,7 +16,7 @@
         width: 4.5rem;
         height: 4.5rem;
         border-radius: 50%;
-        border: 3px solid #fff;
+        border: 3px solid $clr-Primary-dark;
         &:not(:last-child) {
             margin-left: -1.5rem;
             transition: margin-left, transform 0.2s;

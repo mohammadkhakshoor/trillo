@@ -31,6 +31,8 @@
 .details {
     display: flex;
     padding: 4.5rem;
+    background-color: $clr-Grey-light-600;
+    border-bottom: 2px solid $clr-Grey-light-400;
 }
 .description {
     flex: 0 0 60%;

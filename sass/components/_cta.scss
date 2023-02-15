@@ -1,0 +1,62 @@
+.cta {
+    padding: 4.5rem;
+    text-align: center;
+
+    &__text {
+        margin-bottom: 2rem;
+        span {
+            color: $clr-Primary;
+            display: inline-block;
+            margin: 0 1rem;
+        }
+    }
+    &__btn {
+        display: inline-block;
+        position: relative;
+        font-size: 2rem;
+        text-align: center;
+        text-decoration: none;
+        overflow: hidden;
+        
+        border: none;
+        border-radius: 2rem 0.4rem 2rem 0.4rem;
+        color: #fff;
+        background-image: linear-gradient(to right, $clr-Primary, $clr-Primary-dark);
+
+        &-visible {
+            font-size: 2.2rem;
+            display: inline-block;
+            padding: 2rem 4rem;
+            width: 100%;
+            height: 100%;
+            transform: translateY(0%);
+            transition: all 0.2s;
+        }
+        &-invisible {
+            display: grid;
+            place-content:center;
+            font-size: 1.8rem;
+            padding: 2rem 0rem;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: -100%;
+            right: 0;
+            transition: all 0.2s;
+
+        }
+        &:focus {
+            animation: infinitPpoup 0.9s infinite;
+            outline: none;
+        }
+        &:hover {
+            background-image:linear-gradient(to left, $clr-Primary, $clr-Primary-dark);
+        }
+        &:hover &-invisible {
+            top: 0%;
+        }
+        &:hover &-visible {
+            transform: translateY(100%);
+        }
+    }
+}
