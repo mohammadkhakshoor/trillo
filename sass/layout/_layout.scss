@@ -1,9 +1,15 @@
 .container {
-    max-width: 132rem;
+    max-width: 130rem;
     margin: 2rem auto;
     // min-height: 50rem;
     background-color: #fff;
     box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.1);
+    
+    @media only screen and (max-width:$br-largest) {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
 }
 .header {
     min-height: 7rem;
@@ -20,19 +26,31 @@
 }
 .content {
     display: flex;
+    @media only screen and (max-width:$br-medium) {
+        flex-direction: column;
+    }
 }
 .sidebar {
     background-color: $clr-Grey-dark-400;
     flex: 0 0 18%;
+
+    
 }
 .main {
     flex: 1;
+
+    display: flex;
+    flex-direction: column;
 }
 .details {
     display: flex;
     padding: 4.5rem;
     background-color: $clr-Grey-light-600;
     border-bottom: 2px solid $clr-Grey-light-400;
+    
+    @media only screen and (max-width:$br-largest) {
+        padding: 2.5rem;
+    }
 }
 .description {
     flex: 0 0 60%;
@@ -42,6 +60,11 @@
 
     display: flex;
     flex-direction: column;
+
+    @media only screen and (max-width:$br-largest) {
+        padding: 2rem 1.5rem ;
+        margin-left: 3rem;
+    }
 }
 .reviews {
     flex: 1;

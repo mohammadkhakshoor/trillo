@@ -1,18 +1,19 @@
-$clr-Primary: #d55d92;
-$clr-Primary-light: #c05299;
-$clr-Primary-dark: #6d23b6;
+// $clr-Primary: #d55d92;
+// $clr-Primary-light: #c05299;
+// $clr-Primary-dark: #6d23b6;
 
-$clr-Primary: #d1ad52;
-$clr-Primary-light: #f4a261;
-$clr-Primary-dark: #e76f51;
+// $clr-Primary: #d1ad52;
+// $clr-Primary-light: #f4a261;
+// $clr-Primary-dark: #e76f51;
+
+// $clr-Primary: #eb2f64;
+// $clr-Primary-light: #ff3366;
+// $clr-Primary-dark: #ba265d;
 
 $clr-Primary: #1887D1;
 $clr-Primary-light: #4590C2;
 $clr-Primary-dark: #1B5276;
 
-// $clr-Primary: #eb2f64;
-// $clr-Primary-light: #ff3366;
-// $clr-Primary-dark: #ba265d;
 
 $clr-Grey-light-600: #faf9f9;
 $clr-Grey-light-500: #f4f2f2;
@@ -22,3 +23,12 @@ $clr-Grey-light-300: #ccc;
 $clr-Grey-dark-400: #333;
 $clr-Grey-dark-500: #777;
 $clr-Grey-dark-600: #999;
+
+
+////////////////////
+// media Queries brakpoints
+
+$br-largest:75em; //1200px
+// $br-large:;
+$br-medium:56.25em; //900px
+// $br-phone:;
