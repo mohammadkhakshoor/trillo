@@ -323,9 +323,15 @@ button {
   margin: 1.8rem 0;
 }
 .reviews__user-photo {
+  box-sizing: content-box;
   width: 5.5rem;
   height: 5.5rem;
   border-radius: 50%;
+  border: 3px solid #1887D1;
+  transition: all 0.2s;
+}
+.reviews__user-photo:hover {
+  transform: translateY(-0.5rem);
 }
 .reviews__user-info {
   margin-right: 1.4rem;

@@ -14,10 +14,15 @@
         margin: 1.8rem 0;
     }
     &__user-photo {
+        box-sizing: content-box;
         width: 5.5rem;
         height: 5.5rem;
         border-radius: 50%;
-        // border:3px solid #fff
+        border:3px solid $clr-Primary;
+        transition: all 0.2s;
+    }
+    &__user-photo:hover {
+        transform: translateY(-.5rem);
     }
     &__user-info {
         margin-right: 1.4rem;
