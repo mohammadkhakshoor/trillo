@@ -21,6 +21,11 @@
 html {
   font-size: 62.5%; /* 1rem = 10px*/
 }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%; /* 1rem = 8px*/
+  }
+}
 
 body {
   font-family: "peyda", "iransans-light";
@@ -195,12 +200,25 @@ button {
 .sidebar__nav {
   list-style: none;
 }
+@media only screen and (max-width: 56.25em) {
+  .sidebar__nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .sidebar__item {
   margin-bottom: 0.5rem;
   padding: 2.4rem 0 2.5rem 3rem;
   position: relative;
   display: flex;
   align-items: center;
+}
+@media only screen and (max-width: 56.25em) {
+  .sidebar__item {
+    flex: 1;
+    justify-content: center;
+    margin: 0;
+  }
 }
 .sidebar__item::before {
   content: "";
@@ -242,6 +260,11 @@ button {
   font-size: 1.3rem;
   padding: 2.5rem 2rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .copyright {
+    display: none;
+  }
+}
 
 .gallery {
   display: flex;
@@ -258,7 +281,7 @@ button {
 }
 .overview__name {
   font-size: 2.4rem;
-  margin: 0 1rem;
+  margin: 0 4rem 0 1rem;
 }
 .overview__star {
   margin-left: auto;
@@ -313,9 +336,14 @@ button {
 }
 
 .reviews__content {
-  padding: 1.5rem 3.5rem;
+  padding: 1.5rem 2.5rem;
   margin-bottom: 2rem;
   box-shadow: 0 0.5rem 1.6rem rgba(0, 0, 0, 0.09);
+}
+@media only screen and (max-width: 56.25em) {
+  .reviews__content {
+    padding: 1.5rem 2rem;
+  }
 }
 .reviews__user {
   display: flex;
@@ -323,9 +351,15 @@ button {
   margin: 1.8rem 0;
 }
 .reviews__user-photo {
+  box-sizing: content-box;
   width: 5.5rem;
   height: 5.5rem;
   border-radius: 50%;
+  border: 3px solid #1887D1;
+  transition: all 0.2s;
+}
+.reviews__user-photo:hover {
+  transform: translateY(-0.5rem);
 }
 .reviews__user-info {
   margin-right: 1.4rem;
@@ -420,8 +454,14 @@ button {
 }
 
 .cta {
+  margin-top: auto;
   padding: 4.5rem;
   text-align: center;
+}
+@media only screen and (max-width: 56.25em) {
+  .cta {
+    padding: 3rem;
+  }
 }
 .cta__text {
   margin-bottom: 2rem;
@@ -479,10 +519,17 @@ button {
 }
 
 .container {
-  max-width: 132rem;
+  max-width: 130rem;
   margin: 2rem auto;
   background-color: #fff;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.1);
+}
+@media only screen and (max-width: 75em) {
+  .container {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .header {
@@ -500,6 +547,11 @@ button {
 .content {
   display: flex;
 }
+@media only screen and (max-width: 56.25em) {
+  .content {
+    flex-direction: column;
+  }
+}
 
 .sidebar {
   background-color: #333;
@@ -508,6 +560,8 @@ button {
 
 .main {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .details {
@@ -515,6 +569,11 @@ button {
   padding: 4.5rem;
   background-color: #faf9f9;
   border-bottom: 2px solid #f0eeee;
+}
+@media only screen and (max-width: 75em) {
+  .details {
+    padding: 2.5rem;
+  }
 }
 
 .description {
@@ -524,6 +583,12 @@ button {
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.09);
   display: flex;
   flex-direction: column;
+}
+@media only screen and (max-width: 75em) {
+  .description {
+    padding: 2rem 1.5rem;
+    margin-left: 3rem;
+  }
 }
 
 .reviews {
