@@ -98,6 +98,13 @@ button {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 45.625em) {
+  .search {
+    order: 1;
+    flex: 0 0 100%;
+    margin-top: 2rem;
+  }
+}
 .search__input {
   font-size: inherit;
   color: #000;
@@ -105,6 +112,7 @@ button {
   transition: all 0.2s;
   border: none;
   border-radius: 10rem;
+  outline: none;
   padding: 1rem 2rem;
   margin-left: -4rem;
   background-color: #f0eeee;
@@ -117,6 +125,11 @@ button {
 }
 .search__input:hover::-webkit-input-placeholder {
   color: #fff;
+}
+@media only screen and (max-width: 45.625em) {
+  .search__input {
+    width: 100%;
+  }
 }
 .search:hover .search__input, .search:focus .search__input {
   width: 100%;
@@ -206,6 +219,12 @@ button {
     flex-direction: row;
   }
 }
+@media only screen and (max-width: 56.25em) {
+  .sidebar__nav {
+    justify-content: center;
+    align-items: center;
+  }
+}
 .sidebar__item {
   margin-bottom: 0.5rem;
   padding: 2.4rem 0 2.5rem 3rem;
@@ -218,6 +237,12 @@ button {
     flex: 1;
     justify-content: center;
     margin: 0;
+  }
+}
+@media only screen and (max-width: 45.625em) {
+  .sidebar__item {
+    padding: 1.5rem 0;
+    align-items: center;
   }
 }
 .sidebar__item::before {
@@ -238,9 +263,19 @@ button {
   z-index: 1;
   padding-right: 1rem;
 }
+@media only screen and (max-width: 45.625em) {
+  .sidebar__link {
+    padding-right: 0;
+  }
+}
 .sidebar__link span {
   display: block;
   margin-top: 0.4rem;
+}
+@media only screen and (max-width: 45.625em) {
+  .sidebar__link {
+    flex-direction: column;
+  }
 }
 .sidebar__link:link, .sidebar__link:visited {
   text-decoration: none;
@@ -254,6 +289,13 @@ button {
   height: 2.95rem;
   margin-left: 2rem;
   fill: #faf9f9;
+}
+@media only screen and (max-width: 45.625em) {
+  .sidebar__icon {
+    margin: 0;
+    width: 2.25rem;
+    height: 2.25rem;
+  }
 }
 
 .copyright {
@@ -283,6 +325,12 @@ button {
   font-size: 2.4rem;
   margin: 0 4rem 0 1rem;
 }
+@media only screen and (max-width: 45.625em) {
+  .overview__name {
+    margin: 0;
+    margin-right: 1rem;
+  }
+}
 .overview__star {
   margin-left: auto;
   display: flex;
@@ -296,6 +344,11 @@ button {
 .overview__btn {
   display: flex;
   align-items: center;
+}
+@media only screen and (max-width: 45.625em) {
+  .overview__btn {
+    margin-right: 0rem;
+  }
 }
 .overview__btn-inline {
   animation: infinitpopup;
@@ -331,6 +384,12 @@ button {
 .overview__rating-average {
   font-size: 2.2rem;
 }
+@media only screen and (max-width: 45.625em) {
+  .overview__rating {
+    padding: 1rem;
+    margin-right: 1rem;
+  }
+}
 .overview__rating-vote span {
   font-family: "peyda";
 }
@@ -343,6 +402,11 @@ button {
 @media only screen and (max-width: 56.25em) {
   .reviews__content {
     padding: 1.5rem 2rem;
+  }
+}
+@media only screen and (max-width: 45.625em) {
+  .reviews__content {
+    min-width: 100%;
   }
 }
 .reviews__user {
@@ -375,6 +439,11 @@ button {
 .reviews__link-box {
   margin-top: 4rem;
   text-align: center;
+}
+@media only screen and (max-width: 45.625em) {
+  .reviews__link-box {
+    margin-top: 1.5rem;
+  }
 }
 .reviews__link {
   text-decoration: none;
@@ -412,6 +481,11 @@ button {
 .description__item {
   flex: 0 0 50%;
   margin-bottom: 0.5rem;
+}
+@media only screen and (max-width: 45.625em) {
+  .description__item {
+    flex: 0 0 100%;
+  }
 }
 .description__item::before {
   content: "";
@@ -543,6 +617,13 @@ button {
   padding: 0 1rem;
   justify-content: space-between;
 }
+@media only screen and (max-width: 45.625em) {
+  .header {
+    padding: 2rem 2rem;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+  }
+}
 
 .content {
   display: flex;
@@ -575,12 +656,17 @@ button {
     padding: 2.5rem;
   }
 }
+@media only screen and (max-width: 45.625em) {
+  .details {
+    flex-direction: column;
+  }
+}
 
 .description {
   flex: 0 0 60%;
   margin-left: 4.5rem;
   padding: 3rem 2rem;
-  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.09);
+  box-shadow: 0 0.5rem 1.6rem rgba(0, 0, 0, 0.09);
   display: flex;
   flex-direction: column;
 }
@@ -588,6 +674,12 @@ button {
   .description {
     padding: 2rem 1.5rem;
     margin-left: 3rem;
+  }
+}
+@media only screen and (max-width: 45.625em) {
+  .description {
+    margin-left: 0;
+    margin-bottom: 2rem;
   }
 }
 
