@@ -329,8 +329,7 @@ button {
 }
 @media only screen and (max-width: 45.625em) {
   .overview__name {
-    margin: 0;
-    margin-right: 1rem;
+    margin: 0 2rem 0 0.5rem;
   }
 }
 .overview__star {
@@ -389,7 +388,6 @@ button {
 @media only screen and (max-width: 45.625em) {
   .overview__rating {
     padding: 1rem;
-    margin-right: 1rem;
   }
 }
 .overview__rating-vote span {

@@ -7,8 +7,7 @@
         font-size: 2.4rem;
         margin: 0 4rem 0 1rem;
         @media only screen and (max-width:$br-small) {
-            margin: 0;
-            margin-right: 1rem;
+            margin: 0 2rem 0 .5rem;
         }
     }
     &__star {
@@ -46,6 +45,7 @@
     &__btn-inline:focus {
         animation: infinitPpoup 1s infinite;
         color: $clr-Primary;
+
     }
     &__location-icon {
         width: 2.55rem;
@@ -64,7 +64,7 @@
         }
         @media only screen and (max-width:$br-small){
             padding: 1rem;
-            margin-right: 1rem;
+            
         }
         &-vote {
             span {
