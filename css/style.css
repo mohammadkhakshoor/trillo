@@ -151,6 +151,7 @@ button {
   height: 2.95rem;
   background-color: transparent;
   fill: #777;
+  transform: translateY(0.5rem);
 }
 .user-nav {
   font-family: "googlesans-bold";
