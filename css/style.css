@@ -20,6 +20,7 @@
 
 html {
   font-size: 62.5%; /* 1rem = 10px*/
+  scroll-behavior: smooth;
 }
 @media only screen and (max-width: 75em) {
   html {
@@ -36,6 +37,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 form,
