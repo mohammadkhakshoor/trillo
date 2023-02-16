@@ -88,6 +88,7 @@
         height: 2.95rem;
         background-color: transparent;
         fill: $clr-Grey-dark-500;
+        transform: translateY(.5rem);
     }
     &__input:hover + &__button {
     }
@@ -106,6 +107,7 @@
     }
     &__icon-box {
         position: relative;
+        
     }
     &__icon {
         width: 3rem;
@@ -144,7 +146,6 @@
         width: 4.8rem;
         height: 4.8rem;
         border-radius: 50%;
-        transform: scale(1.2);
         position: relative;
     }
     &__user-name {
