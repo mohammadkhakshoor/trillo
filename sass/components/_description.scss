@@ -17,6 +17,9 @@
         flex: 0 0 50%;
         margin-bottom: 0.5rem;
         // margin-left: .4rem;
+        @media only screen and (max-width:$br-small) {
+            flex: 0 0 100%;
+        }
     }
     &__item::before {
         content: "";
